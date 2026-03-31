@@ -7,23 +7,23 @@ const MainSection = ({ cartItems, setCartItems }) => {
   const [activeTab, setActiveTab] = useState('products');
 
   return (
-    <section className="py-20 bg-gray-50" id="products">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+    <section className="py-12 sm:py-16 md:py-20 bg-gray-50" id="products">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 sm:mb-4">
             Premium Digital Tools
           </h2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
+          <p className="text-gray-500 text-sm sm:text-base max-w-xl mx-auto leading-relaxed px-4 sm:px-0">
             Choose from our curated collection of premium digital products
             designed to boost your productivity and creativity.
           </p>
         </div>
 
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8 sm:mb-12">
           <div className="bg-white border border-gray-200 rounded-full p-1 flex gap-1 shadow-sm">
             <button
               onClick={() => setActiveTab('products')}
-              className={`px-8 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 ${
+              className={`px-5 sm:px-8 py-2 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm transition-all duration-200 ${
                 activeTab === 'products'
                   ? 'bg-purple-600 text-white shadow-md'
                   : 'text-gray-500 hover:text-purple-600'
@@ -33,7 +33,7 @@ const MainSection = ({ cartItems, setCartItems }) => {
             </button>
             <button
               onClick={() => setActiveTab('cart')}
-              className={`px-8 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 ${
+              className={`px-5 sm:px-8 py-2 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm transition-all duration-200 ${
                 activeTab === 'cart'
                   ? 'bg-purple-600 text-white shadow-md'
                   : 'text-gray-500 hover:text-purple-600'
@@ -45,7 +45,7 @@ const MainSection = ({ cartItems, setCartItems }) => {
         </div>
 
         {activeTab === 'products' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {products.map(product => (
               <ProductCard
                 key={product.id}
