@@ -7,12 +7,10 @@ const Navbar = ({ cartCount }) => {
   return (
     <nav className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
         <div className="text-2xl font-extrabold text-purple-600 tracking-tight">
           DigiTools
         </div>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ'].map(
             link => (
@@ -27,7 +25,6 @@ const Navbar = ({ cartCount }) => {
           )}
         </div>
 
-        {/* Right */}
         <div className="hidden md:flex items-center gap-4">
           <div className="relative cursor-pointer">
             <ShoppingCart
@@ -51,7 +48,6 @@ const Navbar = ({ cartCount }) => {
           </button>
         </div>
 
-        {/* Mobile Menu button */}
         <div className="flex md:hidden items-center gap-3">
           <div className="relative cursor-pointer">
             <ShoppingCart size={20} className="text-gray-600" />
@@ -70,7 +66,6 @@ const Navbar = ({ cartCount }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
           {['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ'].map(

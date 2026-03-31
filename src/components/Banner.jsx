@@ -2,7 +2,6 @@ const Banner = () => {
   return (
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
-        {/* Left */}
         <div className="flex-1 text-center md:text-left">
           <span className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 text-purple-600 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
             <span className="w-2 h-2 bg-purple-600 rounded-full animate-pulse"></span>
@@ -27,7 +26,6 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* Right */}
         <div className="flex-1 flex justify-center w-full">
           <div className="w-full max-w-lg overflow-hidden shadow-2xl shadow-gray-200">
             <img
