@@ -1,18 +1,20 @@
-# 🛠️ Digtools Platform
+# DigiTools Platform
 
-A professional React e-commerce landing page built from a Figma design, featuring a dynamic product gallery and a functional shopping cart.
+A modern digital marketplace where you can discover and purchase premium AI
+tools, design assets, templates, and productivity software — all in one place.
 
-🔗 **https://digtools.netlify.app/**
+## 🛠️ Technologies Used
 
-### 💻 Technologies
-* **React.js**
-* **Tailwind CSS**
-* **React-Toastify**
+- **React.js** — Component-based UI
+- **Tailwind CSS & DaisyUI** — Styling and responsive design
+- **React-Toastify** — Toast notifications
+- **Vite** — Fast build tool
 
-### ✨ Key Features
-* **Dynamic Toggling:** Switch seamlessly between Product and Cart sections.
-* **Smart Cart:** Add/remove items with real-time navbar count updates.
-* **Toast Alerts:** Instant notifications for adding, removing, and checkout.
+## ✨ Features
 
----
-Developed by **Tawchif**
+- 🛒 **Smart Cart System** — Add products to cart, view total price, and proceed
+  to checkout with real-time navbar cart count update.
+- 🎨 **Interactive Pricing Plans** — Click on any pricing plan to activate it
+  with a smooth highlight effect.
+- 📱 **Fully Responsive** — Optimized for all screen sizes including mobile,
+  tablet, and desktop.
