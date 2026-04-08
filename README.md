@@ -75,7 +75,7 @@ npm run dev
 
 <div align="center">
 
-> **Built to learn. Designed to impress.**
+> **"Built to learn. Designed to impress."**
 
 **— [Tawchif](https://github.com/t4wchif)**
 
